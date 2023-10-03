@@ -12,11 +12,17 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   bool _obscureText = true;
   final TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _namaController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
 
   Future<void> signUpWithEmailAndPassword(String email, String password) async {
     try {
       await FirebaseAuth.instance
           .createUserWithEmailAndPassword(email: email, password: password);
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const Login()),
+      );
     } catch (e) {
       print('Error: $e');
     }
@@ -68,6 +74,7 @@ class _RegisterState extends State<Register> {
             ),
             const SizedBox(height: 12),
             TextFormField(
+              controller: _namaController,
               decoration: const InputDecoration(
                 labelText: 'Nama',
                 hintText: 'Masukkan nama Anda',
@@ -84,6 +91,7 @@ class _RegisterState extends State<Register> {
             ),
             const SizedBox(height: 16.0),
             TextFormField(
+              controller: _emailController,
               decoration: const InputDecoration(
                 labelText: 'Email',
                 hintText: 'Masukkan email Anda',
@@ -122,8 +130,9 @@ class _RegisterState extends State<Register> {
             const SizedBox(height: 24.0),
             ElevatedButton(
               onPressed: () {
-                signUpWithEmailAndPassword(
-                    "email_pengguna", "password_pengguna");
+                String emailPengguna = _emailController.text;
+                String passwordPengguna = _passwordController.text;
+                signUpWithEmailAndPassword(emailPengguna, passwordPengguna);
               },
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size(double.infinity, 55),
@@ -133,7 +142,7 @@ class _RegisterState extends State<Register> {
                 ),
               ),
               child: const Text(
-                'Sign In',
+                'Sign Up',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
