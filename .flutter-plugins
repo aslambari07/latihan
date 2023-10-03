@@ -1,0 +1,16 @@
+# This is a generated file; do not edit or check into version control.
+cloud_firestore=/home/aslam/.pub-cache/hosted/pub.dev/cloud_firestore-4.9.2/
+cloud_firestore_web=/home/aslam/.pub-cache/hosted/pub.dev/cloud_firestore_web-3.7.1/
+firebase_auth=/home/aslam/.pub-cache/hosted/pub.dev/firebase_auth-4.10.0/
+firebase_auth_web=/home/aslam/.pub-cache/hosted/pub.dev/firebase_auth_web-5.8.1/
+firebase_core=/home/aslam/.pub-cache/hosted/pub.dev/firebase_core-2.16.0/
+firebase_core_web=/home/aslam/.pub-cache/hosted/pub.dev/firebase_core_web-2.8.0/
+google_sign_in=/home/aslam/.pub-cache/hosted/pub.dev/google_sign_in-6.1.5/
+google_sign_in_android=/home/aslam/.pub-cache/hosted/pub.dev/google_sign_in_android-6.1.20/
+google_sign_in_ios=/home/aslam/.pub-cache/hosted/pub.dev/google_sign_in_ios-5.6.4/
+google_sign_in_web=/home/aslam/.pub-cache/hosted/pub.dev/google_sign_in_web-0.12.0+5/
+path_provider=/home/aslam/.pub-cache/hosted/pub.dev/path_provider-2.1.1/
+path_provider_android=/home/aslam/.pub-cache/hosted/pub.dev/path_provider_android-2.2.0/
+path_provider_foundation=/home/aslam/.pub-cache/hosted/pub.dev/path_provider_foundation-2.3.1/
+path_provider_linux=/home/aslam/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+path_provider_windows=/home/aslam/.pub-cache/hosted/pub.dev/path_provider_windows-2.2.1/

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "261899636651",
+    "project_id": "latihan-beee7",
+    "storage_bucket": "latihan-beee7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261899636651:android:98fa5c7fe4d3d8a9cd4cee",
+        "android_client_info": {
+          "package_name": "com.example.latihan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261899636651-gec5s3f2j1u26vnunvu4tqfgsk2bm445.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYt1zznxgMTzCi9V9-FrQmab8RxPzi_S0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261899636651-gec5s3f2j1u26vnunvu4tqfgsk2bm445.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
