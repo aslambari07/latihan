@@ -64,6 +64,12 @@ class _LoginState extends State<Login> {
     }
   }
 
+  bool isEmailValid(String email) {
+    String emailPattern = r'^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$';
+    RegExp regExp = RegExp(emailPattern);
+    return regExp.hasMatch(email);
+  }
+
   @override
   Widget build(BuildContext context) {
     double lebar = MediaQuery.of(context).size.width;
